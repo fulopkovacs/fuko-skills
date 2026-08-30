@@ -72,6 +72,10 @@ Follow the prompts to select the skills and agents you want to use.
 
 ### [rebase-branch](./skills/rebase-branch/SKILL.md)
 
+<p align="center">
+  <img width="838" height="248" alt="rebase-branch-DARK" src="https://github.com/user-attachments/assets/f3220bcd-6ae0-450d-9eec-520660cea753" />
+</p>
+
 ```sh
 npx skills add fulopkovacs/fuko-skills --skill rebase-branch
 ```
@@ -82,6 +86,11 @@ npx skills add fulopkovacs/fuko-skills --skill rebase-branch
 
 ### [present-plans](./skills/present-plans/SKILL.md)
 
+<p align="center">
+    <img width="838" height="248" alt="present-plans-DARK" src="https://github.com/user-attachments/assets/729479f2-ad01-4a94-b10c-eb8e1991f37f" />
+</p>
+
+
 ```sh
 npx skills add fulopkovacs/fuko-skills --skill present-plans
 ```
@@ -90,7 +99,12 @@ npx skills add fulopkovacs/fuko-skills --skill present-plans
 - lists the steps, the affected files and how much they'll change
 - highlights what to look out for and summarizes the changes
 
+
 ### [execute-plan-in-steps](./skills/execute-plan-in-steps/SKILL.md)
+  
+<p align="center">
+  <img width="838" height="248" alt="execute-plans-in-steps-DARK" src="https://github.com/user-attachments/assets/29d7b7cc-17a0-42f3-80b2-1eab4156c3fc" />
+</p>
 
 ```sh
 npx skills add fulopkovacs/fuko-skills --skill execute-plan-in-steps
@@ -105,6 +119,10 @@ npx skills add fulopkovacs/fuko-skills --skill execute-plan-in-steps
     - the progress is often off/random (displays 2/4 at the second step for a 5-step process)
 
 ### [review-changes](./skills/review-changes/SKILL.md)
+
+<p align="center">
+  <img width="838" height="248" alt="review-changes-DARK" src="https://github.com/user-attachments/assets/f69c938d-ae85-4d2c-9b0f-4ae64bced40f" />
+</p>
 
 ```sh
 npx skills add fulopkovacs/fuko-skills --skill review-changes
