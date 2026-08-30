@@ -80,6 +80,16 @@ npx skills add fulopkovacs/fuko-skills --skill rebase-branch
 - explains the conflicts to you and offers you solutions
 - mostly using it for rebasing other ppl's or the agent's PR-s
 
+### [present-plans](./skills/present-plans/SKILL.md)
+
+```sh
+npx skills add fulopkovacs/fuko-skills --skill present-plans
+```
+
+- presents plans in a way that's easier to overview
+- lists the steps, the affected files and how much they'll change
+- highlights what to look out for and summarizes the changes
+
 ### [execute-plan-in-steps](./skills/execute-plan-in-steps/SKILL.md)
 
 ```sh
@@ -89,3 +99,7 @@ npx skills add fulopkovacs/fuko-skills --skill execute-plan-in-steps
 - breaks up the execution of a plan into steps
 - stops after each step, summarizes the results and tells you what the next step is
 - waits for your approval before proceeding to the next step
+- suggests you a commit message
+- **⚠️ What to look out for**
+    - the progress is often off/random (displays 2/4 at the second step for a 5-step process)
+
