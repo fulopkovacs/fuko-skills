@@ -42,21 +42,15 @@
   </tr>
 </table>
 
-## About these skills
+## Skills for AI-assisted coding
 
-All of them solve real issues that I've seen at work.
+You'll find these skills useful, if you're like me and you:
+- need to review/rebase/fix heavy PR-s frequently (from AI/human collaborators)
+- can't hand over the whole development cycle to long-running agents
+- like to be in control:
+    - the agents do the work, but you do the thinking.
 
-Some words about me:
-- work on full-stack applications (mainly TanStack Start)
-- mostly using OpenCode and Claude (planning/controlling workers from Claude (Fable), doing the actual work in OpenCode with GPT 5.6 Sol)
-- had to review a lot of heavy PR-s from my teammates in the last month
-- technical leader in our small team, so architecture/infra-related tasks also land on my table
-- one of our contributor is a designer (not a dev), so requires extra attention
-- working with several agents in parallel on the same project using [`herdr`](https://herdr.dev) and git worktrees ([`wt`](https://worktrunk.dev))
-- manually written code vs generated %
-    - prototypes: 90% generated, not necessarily reviewed manually
-    - mvp-s: 60-80% generated, but I still review every single line
-        - I usually do a lot of planning, and iterations
+If these resonate with you, you might find the skills below useful too!
 
 ## Usage
 
