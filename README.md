@@ -89,6 +89,7 @@ npx skills add fulopkovacs/fuko-skills --skill present-plans
 - presents plans in a way that's easier to overview
 - lists the steps, the affected files and how much they'll change
 - highlights what to look out for and summarizes the changes
+- you can use the [`execute-plan-in-steps`](#execute-plan-in-steps) skill to execute the plan later
 
 ### [execute-plan-in-steps](./skills/execute-plan-in-steps/SKILL.md)
 
@@ -97,6 +98,7 @@ npx skills add fulopkovacs/fuko-skills --skill execute-plan-in-steps
 ```
 
 - breaks up the execution of a plan into steps
+    - you can make plans with the [`present-plans`](#present-plans) skill
 - stops after each step, summarizes the results and tells you what the next step is
 - waits for your approval before proceeding to the next step
 - suggests you a commit message
