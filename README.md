@@ -89,7 +89,6 @@ npx skills add fulopkovacs/fuko-skills --skill present-plans
 - presents plans in a way that's easier to overview
 - lists the steps, the affected files and how much they'll change
 - highlights what to look out for and summarizes the changes
-- you can use the [`execute-plan-in-steps`](#execute-plan-in-steps) skill to execute the plan later
 
 ### [execute-plan-in-steps](./skills/execute-plan-in-steps/SKILL.md)
 
@@ -105,3 +104,13 @@ npx skills add fulopkovacs/fuko-skills --skill execute-plan-in-steps
 - **⚠️ What to look out for**
     - the progress is often off/random (displays 2/4 at the second step for a 5-step process)
 
+### [review-changes](./skills/review-changes/SKILL.md)
+
+```sh
+npx skills add fulopkovacs/fuko-skills --skill review-changes
+```
+
+- reviews PR-s/uncommitted/staged/unstaged/branch/commit changes
+- groups the changes into logical features and walks you through them one by one
+- highlights bugs, regressions, security concerns
+    - gives you concrete testing steps
