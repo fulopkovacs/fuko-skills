@@ -59,11 +59,21 @@ Some words about me:
 
 ## Usage
 
-// insert usage
+Install the skills using [skills.sh](https://skills.sh):
+
+```sh
+npx skills add fulopkovacs/fuko-skills
+```
+
+Follow the prompts to select the skills and agents you want to use.
 
 ## Skills
 
 ### [rebase-branch](./skills/rebase-branch/SKILL.md)
+
+```sh
+npx skills add fulopkovacs/fuko-skills --skill rebase-branch
+```
 
 - walks you through the rebase interactively
 - explains the conflicts to you and offers you solutions
