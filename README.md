@@ -48,6 +48,7 @@ All of them solve real issues that I've seen at work.
 
 Some words about me:
 - work on full-stack applications (mainly TanStack Start)
+- mostly using OpenCode and Claude (planning/controlling workers from Claude (Fable), doing the actual work in OpenCode with GPT 5.6 Sol)
 - had to review a lot of heavy PR-s from my teammates in the last month
 - technical leader in our small team, so architecture/infra-related tasks also land on my table
 - one of our contributor is a designer (not a dev), so requires extra attention
