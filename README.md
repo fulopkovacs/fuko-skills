@@ -41,3 +41,30 @@
     </td>
   </tr>
 </table>
+
+## About these skills
+
+All of them solve real issues that I've seen at work.
+
+Some words about me:
+- work on full-stack applications (mainly TanStack Start)
+- had to review a lot of heavy PR-s from my teammates in the last month
+- technical leader in our small team, so architecture/infra-related tasks also land on my table
+- one of our contributor is a designer (not a dev), so requires extra attention
+- working with several agents in parallel on the same project using [`herdr`](https://herdr.dev) and git worktrees ([`wt`](https://worktrunk.dev))
+- manually written code vs generated %
+    - prototypes: 90% generated, not necessarily reviewed manually
+    - mvp-s: 60-80% generated, but I still review every single line
+        - I usually do a lot of planning, and iterations
+
+## Usage
+
+// insert usage
+
+## Skills
+
+### [rebase-branch](./skills/rebase-branch/SKILL.md)
+
+- walks you through the rebase interactively
+- explains the conflicts to you and offers you solutions
+- mostly using it for rebasing other ppl's or the agent's PR-s
