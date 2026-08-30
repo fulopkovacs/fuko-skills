@@ -73,9 +73,23 @@ Follow the prompts to select the skills and agents you want to use.
 ### [rebase-branch](./skills/rebase-branch/SKILL.md)
 
 <p align="center">
-  <img     width="520"
-    alt="rebase-branch-DARK" src="https://github.com/user-attachments/assets/f3220bcd-6ae0-450d-9eec-520660cea753" />
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://github.com/user-attachments/assets/f3220bcd-6ae0-450d-9eec-520660cea753"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://github.com/user-attachments/assets/f609ea66-1df2-43d0-9141-e3090c2e6f3a"
+    />
+    <img
+      width="520"
+      alt="rebase-branch"
+      src="https://github.com/user-attachments/assets/f609ea66-1df2-43d0-9141-e3090c2e6f3a"
+    />
+  </picture>
 </p>
+
 
 ```sh
 npx skills add fulopkovacs/fuko-skills --skill rebase-branch
@@ -88,7 +102,21 @@ npx skills add fulopkovacs/fuko-skills --skill rebase-branch
 ### [present-plans](./skills/present-plans/SKILL.md)
 
 <p align="center">
-    <img     width="520" alt="present-plans-DARK" src="https://github.com/user-attachments/assets/729479f2-ad01-4a94-b10c-eb8e1991f37f" />
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://github.com/user-attachments/assets/729479f2-ad01-4a94-b10c-eb8e1991f37f"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://github.com/user-attachments/assets/6bbab7f8-2bb1-472d-9a12-d82677beaedc"
+    />
+    <img
+      width="520"
+      alt="present-plans"
+      src="https://github.com/user-attachments/assets/6bbab7f8-2bb1-472d-9a12-d82677beaedc"
+    />
+  </picture>
 </p>
 
 
@@ -104,8 +132,23 @@ npx skills add fulopkovacs/fuko-skills --skill present-plans
 ### [execute-plan-in-steps](./skills/execute-plan-in-steps/SKILL.md)
   
 <p align="center">
-  <img     width="520" alt="execute-plans-in-steps-DARK" src="https://github.com/user-attachments/assets/29d7b7cc-17a0-42f3-80b2-1eab4156c3fc" />
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://github.com/user-attachments/assets/29d7b7cc-17a0-42f3-80b2-1eab4156c3fc"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://github.com/user-attachments/assets/e44ac644-d6f0-4121-bc18-6dd363a51380"
+    />
+    <img
+      width="520"
+      alt="execute-plan-in-steps"
+      src="https://github.com/user-attachments/assets/e44ac644-d6f0-4121-bc18-6dd363a51380"
+    />
+  </picture>
 </p>
+
 
 ```sh
 npx skills add fulopkovacs/fuko-skills --skill execute-plan-in-steps
@@ -122,8 +165,23 @@ npx skills add fulopkovacs/fuko-skills --skill execute-plan-in-steps
 ### [review-changes](./skills/review-changes/SKILL.md)
 
 <p align="center">
-  <img     width="520"  alt="review-changes-DARK" src="https://github.com/user-attachments/assets/f69c938d-ae85-4d2c-9b0f-4ae64bced40f" />
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://github.com/user-attachments/assets/f69c938d-ae85-4d2c-9b0f-4ae64bced40f"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://github.com/user-attachments/assets/98a63f0e-bfec-4622-8075-98044f7f3b23"
+    />
+    <img
+      width="520"
+      alt="review-changes"
+      src="https://github.com/user-attachments/assets/98a63f0e-bfec-4622-8075-98044f7f3b23"
+    />
+  </picture>
 </p>
+
 
 ```sh
 npx skills add fulopkovacs/fuko-skills --skill review-changes
