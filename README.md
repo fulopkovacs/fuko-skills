@@ -19,26 +19,11 @@
   </picture>
 </p>
 
-<table align="center">
-  <tr>
-    <td align="center">
-      <a href="https://x.com/notacheetah">
-        <img src="https://cdn.simpleicons.org/x/000000/ffffff" width="20" height="20" alt="X" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://www.youtube.com/@fyicli">
-        <img src="https://cdn.simpleicons.org/youtube/000000/ffffff" width="20" height="20" alt="YouTube" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/fulopkovacs">
-        <img src="https://cdn.simpleicons.org/github/000000/ffffff" width="20" height="20" alt="GitHub" />
-      </a>
-    </td>
-    <td align="center">
+<p align="center">
+      <a href="https://x.com/notacheetah">X (Twitter)</a> | 
+      <a href="https://github.com/fulopkovacs">GitHub</a> |
+      <a href="https://www.youtube.com/@fyicli">YouTube</a> |
       <a href="https://fulop.dev">🌐 fulop.dev</a>
-    </td>
   </tr>
 </table>
 
