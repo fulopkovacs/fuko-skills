@@ -68,6 +68,10 @@ After confirmation, present one logical change per message. For each:
    implementation choices. Never display file lists inline.
 5. Highlight concrete bugs, regressions, security concerns, and missing tests;
    otherwise state what deserves attention.
+   - Use these severity levels (include the emojis):
+       - 🔴 Major
+       - 🟠 Medium
+       - 🟡 Low
 6. Ask before moving to the next change.
 
 Include file and line references for findings. Keep snippets minimal. After the
