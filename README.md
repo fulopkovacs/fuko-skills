@@ -172,3 +172,15 @@ npx skills add fulopkovacs/fuko-skills --skill review-changes
 - asks you to pick a mode when your preference isn't clear
 - highlights bugs, regressions, security concerns
     - gives you concrete testing steps
+
+## Experimental skills
+
+### [post-review-comments](./skills/post-review-comments/SKILL.md)
+
+```sh
+npx skills add fulopkovacs/fuko-skills --skill post-review-comments
+```
+
+- drafts and posts inline GitHub PR review comments
+- separates the user experience from technical reproduction, with numbered steps
+- explains the bug and proposes an actionable fix
