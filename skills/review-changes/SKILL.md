@@ -1,6 +1,6 @@
 ---
 name: review-changes
-description: Review PR, uncommitted, staged, unstaged, branch, or commit changes interactively. Use when the user asks for a code review or to review changes.
+description: Review PR, uncommitted, staged, unstaged, branch, or commit changes in interactive or one-shot mode. Use when the user asks for a code review or to review changes.
 license: MIT
 compatibility: opencode
 metadata:
@@ -11,6 +11,22 @@ metadata:
 
 Review the actual diff, focusing on behavior, regressions, risks, and missing
 tests. Be brief.
+
+## Choose the mode
+
+Honor an explicit mode or a clear preference in the user's request:
+
+- **Interactive**: walk through one logical change at a time, pausing for the
+  user's confirmation. Use for requests such as "walk me through the changes"
+  or "review this interactively".
+- **One-shot**: give the complete review and all feedback in one response,
+  without pausing between changes. Use for requests such as "fast review",
+  "one-shot review", or "give me all the feedback at once". This changes delivery,
+  not review depth.
+
+If the intended mode is unclear, ask the user to choose Interactive or One-shot
+before presenting the review. If scope also needs clarification, ask about both
+together.
 
 ## Choose the scope
 
@@ -27,7 +43,7 @@ choose from only the scopes that currently contain changes, such as:
 Put Current PR first and mark it recommended. Do not assume staged, unstaged,
 and untracked changes are equivalent. Never modify the reviewed changes.
 
-## First message
+## Review overview
 
 Briefly summarize the review scope and changes. Then show up to three non-empty
 tables, grouping rows by logical feature rather than by file:
@@ -51,11 +67,15 @@ Report `Change size` as modified lines: additions plus deletions. Include the
 breakdown when available, for example `18 (+12/-6)`. Omit empty tables and use
 no more than these three tables.
 
-End by naming the first logical change to review and ask to continue.
+In Interactive mode, end by naming the first logical change to review and ask
+to continue. In One-shot mode, proceed directly to the complete review in the
+same response.
 
-## Walkthrough
+## Review each logical change
 
-After confirmation, present one logical change per message. For each:
+In Interactive mode, after confirmation, present one logical change per message.
+In One-shot mode, cover all logical changes in the same response, using a separate
+heading for each. For each change:
 
 1. Explain what it does.
 2. Add a `👀 Visual changes` section describing the user-visible before and after,
@@ -72,7 +92,7 @@ After confirmation, present one logical change per message. For each:
        - 🔴 Major
        - 🟠 Medium
        - 🟡 Low
-6. Ask before moving to the next change.
+6. In Interactive mode only, ask before moving to the next change.
 
 Include file and line references for findings. Keep snippets minimal. After the
 last change, briefly summarize findings by severity and note remaining testing

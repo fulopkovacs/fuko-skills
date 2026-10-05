@@ -167,6 +167,8 @@ npx skills add fulopkovacs/fuko-skills --skill review-changes
 ```
 
 - reviews PR-s/uncommitted/staged/unstaged/branch/commit changes
-- groups the changes into logical features and walks you through them one by one
+- groups the changes into logical features
+- offers interactive walkthroughs or a one-shot review with all feedback at once
+- asks you to pick a mode when your preference isn't clear
 - highlights bugs, regressions, security concerns
     - gives you concrete testing steps
