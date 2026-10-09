@@ -175,6 +175,26 @@ npx skills add fulopkovacs/fuko-skills --skill review-changes
 
 ## Experimental skills
 
+### [agent-browser](./skills/agent-browser/SKILL.md)
+
+```sh
+npx skills add fulopkovacs/fuko-skills --skill agent-browser
+```
+
+- drives websites with agent-browser with trustworthy video evidence
+- explains why `record start/stop` alone collapses waits into a few frames
+- continuous CDP screenshot capture at fixed cadence + slower export + verification
+
+### [arlo-user-test](./skills/arlo-user-test/SKILL.md)
+
+```sh
+npx skills add fulopkovacs/fuko-skills --skill arlo-user-test
+```
+
+- runs short Arlo feature tests (article reading, screenshot preview)
+- requires the `agent-browser` skill first (soft dependency, scripts are reused)
+- enforces honest reporting: never claims a fix from a generic summary alone
+
 ### [post-review-comments](./skills/post-review-comments/SKILL.md)
 
 ```sh
