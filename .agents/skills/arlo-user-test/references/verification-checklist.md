@@ -3,10 +3,10 @@
 ## Video
 
 - Raw duration ≈ actual elapsed test time; frame count ≈ elapsed × fps.
-- When a slowed copy was requested: slowed duration ≈ raw × the requested factor.
-- `ffmpeg -f null -` decode succeeds for every shipped file.
+- Slowed duration ≈ raw × factor (default 10x).
+- `ffmpeg -f null -` decode succeeds for both files.
 - Start frame shows the prompt being entered; middle frame shows waiting/generation; end frame shows the complete answer held visible.
-- Retain the raw video; retain slowed copies only when requested; report all paths.
+- Retain both raw and slowed videos; report both paths.
 
 ## Article reading
 

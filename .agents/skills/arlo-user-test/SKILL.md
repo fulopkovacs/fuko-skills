@@ -37,5 +37,5 @@ A generic summary alone does not prove text extraction worked. Check the exposed
 1. Article summary: PASS / FAIL / BLOCKED + one-line evidence.
 2. Screenshot preview: PASS / FAIL / BLOCKED + one-line evidence.
 3. Preview after reload: PASS / FAIL / BLOCKED + one-line evidence.
-4. Raw video: path, duration, frame count. Slowed video details only when one was requested.
+4. Raw video: path, duration, frame count. Slowed video: path, duration, frame count.
 5. Observed errors and what was NOT verified. No passing claims for unseen behavior.

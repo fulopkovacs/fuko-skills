@@ -1,14 +1,10 @@
 #!/usr/bin/env bash
-# Export a slower copy of a video: export-slower.sh <input> <output> <factor>
-# Factor is explicit (e.g. 10 for setpts=10*PTS). Only run when a slowed copy was requested.
+# Export a slower copy of a video: export-slower.sh <input> <output> [factor]
+# Default factor is 10 (setpts=10*PTS).
 set -euo pipefail
-if [[ $# -ne 3 ]]; then
-  echo "usage: export-slower.sh <input> <output> <factor>" >&2
-  exit 1
-fi
-input="$1"
-output="$2"
-factor="$3"
+input="${1:?usage: export-slower.sh <input> <output> [factor]}"
+output="${2:?usage: export-slower.sh <input> <output> [factor]}"
+factor="${3:-10}"
 /usr/bin/ffmpeg -v error -y -i "$input" -vf "setpts=${factor}*PTS" -an \
   -c:v libx264 -pix_fmt yuv420p -movflags +faststart "$output"
 /usr/bin/ffmpeg -v error -i "$output" -f null -
