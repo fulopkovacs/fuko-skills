@@ -11,7 +11,25 @@ metadata:
 
 Build the animation as a Rive project, capture it frame by frame, and encode
 **HEVC with alpha**: transparent, about 5–20 MB for 10 s (ProRes 4444 is
-~1 GB for the same clip). Requires macOS (VideoToolbox), `rive`, `ffmpeg`.
+~1 GB for the same clip).
+
+## 0. Check the requirements first
+
+Before doing anything else, run:
+
+```sh
+uname -s                                    # must print Darwin (macOS)
+command -v rive ffmpeg ffprobe bc
+ffmpeg -hide_banner -encoders | grep hevc_videotoolbox
+```
+
+If any check fails, **stop and tell the user** what's missing and how to get
+it. Don't start building or look for workarounds:
+
+- Not macOS: this pipeline needs VideoToolbox for HEVC with alpha. Say so;
+  ProRes 4444 is the cross-platform alternative, but it's ~50× bigger.
+- `rive` missing: install the Rive CLI (`rive doctor` checks the setup).
+- `ffmpeg`/`ffprobe` missing, or no `hevc_videotoolbox`: `brew install ffmpeg`.
 
 ## 1. Build the scene
 

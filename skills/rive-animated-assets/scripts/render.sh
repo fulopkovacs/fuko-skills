@@ -10,6 +10,14 @@
 # Env: SCALE (default 2), JOBS (default 8), FORCE=1 to overwrite.
 set -euo pipefail
 
+# requirements: macOS (VideoToolbox), rive, ffmpeg with hevc_videotoolbox
+[[ $(uname -s) == Darwin ]] || { echo "needs macOS (VideoToolbox HEVC with alpha)" >&2; exit 1; }
+for tool in rive ffmpeg ffprobe bc; do
+  command -v "$tool" >/dev/null || { echo "missing: $tool" >&2; exit 1; }
+done
+ffmpeg -hide_banner -encoders 2>/dev/null | grep -q hevc_videotoolbox \
+  || { echo "ffmpeg lacks hevc_videotoolbox (brew install ffmpeg)" >&2; exit 1; }
+
 PROJECT=${1:?project dir}
 TOTAL=${2:?total frames at 60fps}
 NAME=${3:?output name}
