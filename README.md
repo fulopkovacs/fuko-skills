@@ -204,3 +204,15 @@ npx skills add fulopkovacs/fuko-skills --skill post-review-comments
 - drafts and posts inline GitHub PR review comments
 - separates the user experience from technical reproduction, with numbered steps
 - explains the bug and proposes an actionable fix
+
+### [rive-animated-assets](./skills/rive-animated-assets/SKILL.md)
+
+```sh
+npx skills add fulopkovacs/fuko-skills --skill rive-animated-assets
+```
+
+- builds animated video assets (overlays, outros, terminal recreations) with the Rive CLI
+- renders them with a transparent background as small HEVC files (MBs, not GBs)
+- reminds you of the DaVinci Resolve fix for washed-out colours (Data Levels → Video)
+- **⚠️ What to look out for**
+    - macOS only (uses VideoToolbox for HEVC with alpha)
