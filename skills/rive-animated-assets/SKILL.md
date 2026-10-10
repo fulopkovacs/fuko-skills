@@ -1,6 +1,7 @@
 ---
 name: rive-animated-assets
-description: Make animated video assets (overlays, lower thirds, terminal recreations, outros) with the Rive CLI and render them as small HEVC files with a transparent background, ready for DaVinci Resolve or Final Cut. Use when the user asks for an animation, motion graphic or overlay video built with Rive, or for a transparent video asset.
+description: Make animated video assets (overlays, lower thirds, terminal recreations, outros) with the Rive CLI and render them as small HEVC files with a transparent background, ready for DaVinci Resolve or Final Cut. Only use when the user explicitly invokes this skill by name; never load it automatically.
+disable-model-invocation: true
 license: MIT
 compatibility: opencode
 metadata:
