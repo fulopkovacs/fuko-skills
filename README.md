@@ -183,7 +183,7 @@ npx skills add fulopkovacs/fuko-skills --skill agent-browser
 
 - drives websites with agent-browser with trustworthy video evidence
 - explains why `record start/stop` alone collapses waits into a few frames
-- continuous CDP screenshot capture at fixed cadence + slower export + verification
+- continuous CDP screenshot capture at fixed cadence + verification (real-time only, never slowed down)
 
 ### [arlo-user-test](./skills/arlo-user-test/SKILL.md)
 

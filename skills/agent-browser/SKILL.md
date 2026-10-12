@@ -57,13 +57,13 @@ Encode the raw video preserving cadence:
   -c:v libx264 -pix_fmt yuv420p -movflags +faststart <raw>.mp4
 ```
 
-Export a slower copy only when the user asks for one, with `scripts/export-slower.sh` (uses `setpts=N*PTS` with an explicit factor).
+Export only the real-time video. Do not create slowed-down copies with `setpts` or any other method.
 
 See `references/ffmpeg-pitfalls.md` for why `.mp4` and even-dimension padding matter.
 
 ## Verification (do not skip)
 
-1. `ffprobe` raw and final: duration, size, frame count must be consistent (raw duration ≈ actual elapsed time; slowed duration ≈ raw × factor).
+1. `ffprobe` the final video: duration, size, frame count must be consistent (duration ≈ actual elapsed time).
 2. Decode check: `/usr/bin/ffmpeg -v error -i <file> -f null -` must succeed.
 3. Inspect start/middle/end frames: confirm the prompt was submitted and the complete answer is visible.
-4. Report raw duration, frame counts, and video paths (plus slowed copy details only when one was requested: slowed duration ≈ raw × factor). If continuous capture was unavailable, say so honestly instead of shipping a stretched event clip.
+4. Report raw duration, frame counts, and video paths. If continuous capture was unavailable, say so honestly instead of shipping a stretched event clip.

@@ -13,7 +13,7 @@ Run one minimal Arlo feature test per invocation. No app code edits, migrations,
 
 ## Prerequisite (soft dependency)
 
-First load the `agent-browser` skill and follow its continuous-capture workflow — not event-only `record start/stop`. Reuse its `scripts/continuous-capture.mjs` and `scripts/export-slower.sh` (resolve the installed path of the `agent-browser` skill; do not duplicate the scripts here).
+First load the `agent-browser` skill and follow its continuous-capture workflow — not event-only `record start/stop`. Reuse its `scripts/continuous-capture.mjs` (resolve the installed path of the `agent-browser` skill; do not duplicate the script here).
 
 ## App flow
 
@@ -37,5 +37,5 @@ A generic summary alone does not prove text extraction worked. Check the exposed
 1. Article summary: PASS / FAIL / BLOCKED + one-line evidence.
 2. Screenshot preview: PASS / FAIL / BLOCKED + one-line evidence.
 3. Preview after reload: PASS / FAIL / BLOCKED + one-line evidence.
-4. Raw video: path, duration, frame count. Slowed video details only when one was requested.
+4. Video: path, duration, frame count (real-time only, never slowed down).
 5. Observed errors and what was NOT verified. No passing claims for unseen behavior.
