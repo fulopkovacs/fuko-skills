@@ -14,6 +14,9 @@ Use `agent-browser` for real browser interaction. Prefer dedicated subcommands o
 ## Sessions and basics
 
 - Isolate work with `--session <name>` on every call.
+- Right after opening the browser and before any recording or screenshot, set the default viewport to 1280x866:
+  `agent-browser --session <name> set viewport 1280 866`
+  Override this size when a test needs a different viewport.
 - Discover state before acting:
   `agent-browser --session <name> get url`
   `agent-browser --session <name> snapshot -i`

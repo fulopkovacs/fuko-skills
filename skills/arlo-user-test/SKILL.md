@@ -18,6 +18,7 @@ First load the `agent-browser` skill and follow its continuous-capture workflow 
 ## App flow
 
 1. Discover the running app URL (check listeners/processes; do not assume a port).
+   Right after opening the browser and before any recording or screenshot, set the default viewport to 1280x866 with `agent-browser --session <name> set viewport 1280 866`. Override this size when a test needs a different viewport.
 2. Authenticate BEFORE recording; keep login out of the video. Never save credentials in files.
 3. If the account has no audits, create one via the normal UI before recording (public site the user approves, e.g. `https://www.wikipedia.org`). Report paywall or creation errors instead of changing billing.
 4. Open the target chat (e.g. `/audit/<id>/chat`) and confirm the message box is ready.

@@ -14,7 +14,7 @@ ffmpeg -hide_banner -f lavfi -i color=size=64x64:rate=1 -t 1 \
 
 ## Odd frame dimensions fail with libx264
 
-Headless captures can be e.g. 1280x577. libx264 requires even dimensions:
+The default viewport is 1280x866, set right after opening the browser and before any recording or screenshot with `agent-browser --session <name> set viewport 1280 866`; override it when a test needs a different size. Previously, headless captures defaulted to 1280x577. libx264 requires even dimensions:
 
 ```
 [libx264] height not divisible by 2 (1280x577)

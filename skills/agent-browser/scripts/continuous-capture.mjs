@@ -11,6 +11,9 @@ import { performance } from 'node:perf_hooks';
  *   node continuous-capture.mjs http://127.0.0.1:46879/json/list \
  *     'window.__liveCapture === true' /tmp/opencode/live-test 5 600
  *
+ * Right after opening the browser and before any recording or screenshot,
+ * set the default viewport to 1280x866 (override when a test needs a different size):
+ *   agent-browser --session <name> set viewport 1280 866
  * Before running, mark the page under test:
  *   agent-browser --session <name> eval 'window.__liveCapture=true'
  *
